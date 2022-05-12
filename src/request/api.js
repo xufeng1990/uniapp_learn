@@ -5,7 +5,6 @@ export default {
     todaySnapList(params) {
 		return request("/book/snap", "GET", params)
     },
-    
     // 图书首页
      home(params) {
 		return request("/book/home", "GET", params)

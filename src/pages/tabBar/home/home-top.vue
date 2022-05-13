@@ -24,16 +24,16 @@
 </template>
 
 <script>
-import Text from "../../component/text/text.vue";
-import view from "../../component/view/view.vue";
 export default {
   props: {
     bookList: {
       type: Array,
-      default: [],
+      default: ()=> {
+        return []
+      },
     },
   },
-  components: { view, Text },
+  components: { },
   methods: {
     itemClick(bookTitle) {
       let data = {

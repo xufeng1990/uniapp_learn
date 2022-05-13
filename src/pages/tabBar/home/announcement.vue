@@ -12,11 +12,9 @@
 </template>
 
 <script>
-import image from '../../API/image/image.vue'
-import Text from '../../component/text/text.vue'
 
 export default {
-  components: { image, Text },
+  components: { },
 
 }
   

@@ -34,10 +34,9 @@
 <script>
 import { onMounted } from "vue";
 import UniList from "../../../uni_modules/uni-list/components/uni-list/uni-list.vue";
-import text from "../../component/text/text.vue";
 let params = null;
 export default {
-  components: { text },
+  components: { },
   data() {
     return {
       dataList: [
@@ -84,18 +83,19 @@ export default {
             "https://bjetxgzv.cdn.bspapp.com/VKCEYUGU-uni-app-doc/6acec660-4f31-11eb-a16f-5b3e54966275.jpg",
         },
       ],
+      navTitle: {
+      type: String,
+      default: ''
+    },
     };
-  },
-  props: {
-    bookTitle: "测试",
   },
   onLoad(option) {
     let data = JSON.parse(decodeURIComponent(option.data));
     params = data;
+    this.navTitle = params["navTitle"];
     uni.setNavigationBarTitle({
-      title: params["navTitle"],
+      title: this.navTitle,
     });
-    this.bookTitle = params["bookTitle"];
   },
 };
 </script>

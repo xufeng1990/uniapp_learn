@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import View from '../../component/view/view.vue'
 
 export default {
     props: {
@@ -29,8 +28,7 @@ searchClick() {
 }
   }
 }
-
-View  
+  
 </script>
 
 <style>

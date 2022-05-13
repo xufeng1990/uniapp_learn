@@ -29,11 +29,8 @@
 </template>
 
 <script>
-import image from "../../API/image/image.vue";
-import scrollView from "../../component/scroll-view/scroll-view.vue";
-import text from "../../component/text/text.vue";
 export default {
-  components: { scrollView, image, text },
+  components: { },
   data() {
     return {
       left: "0",

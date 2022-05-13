@@ -7,8 +7,6 @@
 </template>
 
 <script>
-import View from '../../component/view/view.vue'
-
 export default {
     props: {
         title:""
@@ -16,8 +14,7 @@ export default {
 components: {
   }
 }
-
-View  
+  
 </script>
 
 <style>
